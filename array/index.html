@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<script type="text/javascript">
+		1-
+
+		let product = 1;
+		for(let i = 0; i< array.length; i++) {
+		   product *= array[i];
+		 }
+		 
+		 return product;
+
+
+		 //2sum
+		 let product = 0;
+		 for(let i = 0; i< array.length; i++) {
+			product += array[i];
+		  }
+		  
+		  return product;
+
+
+		  //4
+		  let count1 = 0, count2 = 0;
+		  let B = [];
+		  for(let i = 0; i<N; i++) {
+			if(Arr[i]%2 == 0) {
+			  count1 += Arr[i];
+			}
+			 else{
+			  count2 += Arr[i];
+			}
+		  }		  
+		  B[0] = count1;
+		  B[1] = count2;
+		  return B;
+
+//5
+for(let i = 0; i < N; i++) {
+    if(array[i] === M) {
+      return "YES"
+    }
+  }
+  
+  return "NO";
+
+  //6
+  const arr = [];
+  for(let i = 0; i < N; i++) {
+	if(Arr[i] >= 18) {
+	  arr.push(Arr[i]);
+	}
+  }
+  return arr;
+
+  //7
+  let arr = "";
+  for(let i = 0; i < N; i++) {
+    arr += (array[i] + 1) + " ";
+  }
+  
+  console.log(arr)
+
+  //8
+  for(let i = 0; i < N; i++) {
+	if(Arr[i] < 32) {
+	  return "NO"
+	}
+  }
+  
+  return "YES";
+
+  //9
+  return Math.min(...arr);
+}
+function arrayMax(arr) {
+  return Math.max(...arr);
+
+
+
+
+
+
+
+		// "let studentRecords = [ {name: 'John', id: 123, marks : 98 },
+//           {name: 'Baba', id: 101, marks : 23 },
+//           {name: 'yaga', id: 200, marks : 45 },
+//           {name: 'Wick', id: 115, marks : 75 } ] "
+// "Question 1 : We are interested in retrieving only the name of the students and all the names should be in caps.
+
+// ['JOHN', 'BABA', 'YAGA', 'WICK']
+
+            var num=studentRecords.map((i)=>{
+             return i.name;
+          	})
+             console.log(num);
+
+
+// "Question 2: Suppose we have the same dataset as above but this time we want to get the details of students who scored more than 50 marks.
+// [{name: 'John', id: 123, marks : 98 },{name: 'Wick', id: 115, marks : 75 }]"
+
+	    var result=studentRecords.filter((i)=>{
+	    return i.marks>50;
+	   	})
+	    console.log(result);
+
+
+// Question 3: Retrieve the details of students who scored more than 50 marks and have id greater than 120.
+
+	   var result=studentRecords.filter((i)=>{
+	    return (i.marks>50 && i.id>120);
+	  })
+	   console.log(result);
+
+
+// Question 4: Consider the same scenario we have discussed above, but this time we would like to know the sum total of the marks of the students.
+
+		let result=studentRecords.reduce((sum,i)=>{
+	    sum=sum+i.marks;
+	    return sum;
+	   },0)
+	  console.log(result)
+
+// Question 5: This time we want to get only the names of the students who scored more than 50 marks from the same dataset used above.
+
+	   var num="";
+	   var result=studentRecords.map((i)=>{
+
+	    if(i.marks>50){
+	    num +=i.name
+
+	    }
+	    return num;
+	})
+	   console.log(result);
+
+//  Question 6: This time we are required to print the sum of marks of the students with id > 120.
+
+	 var result=studentRecords.reduce((res,ele)=>{
+	    if(ele.id>120){
+	        result +=ele.marks;
+	    }
+	    return result;
+	},0)
+	console.log(result);
+
+
+// Question 7: This time we are required to print the total marks of the students with marks greater than 50 after a grace of 15 marks has been added to those students who scored less than 50.
+
+	let result=studentRecords.reduce((res,ele)=>{
+	    if((ele.marks+15)>50){
+	        res +=ele.marks;
+	    }
+	    return res;
+	},0)
+	console.log(result6)
+
+
+// Create 6 objects , each object will have name, class, roll no as properties. Store these objects in an array of objects.
+
+	let Object=[
+	    {name:'Ranjeet',class:5,roll:25},
+	    {name:'Utkarsh',class:6,roll:36},
+	    {name:'Saket',class:7,roll:42},
+	    {name:'Roshan',class:8,roll:27},
+	    {name:'Dev Anand',class:9,roll:16},
+	    {name:'Amrit Raj',class:10,roll:21},
+	]
+
+	</script>
+	<script src="index.js"></script>
+</body>
+</html>

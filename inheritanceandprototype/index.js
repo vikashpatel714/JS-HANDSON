@@ -1,6 +1,6 @@
 // 1. Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype
 // const parent = {
-//     name: "ikash",
+//     name: "Vikash",
 //     printName: function () {
 //       console.log(this.name);
 //     },
